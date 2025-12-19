@@ -1,0 +1,5 @@
+{
+  "name": "SkinSwap AI - 智能换皮工具",
+  "description": "专业级AI物品、图标或角色换皮工具。上传一张图片，即可利用 Gemini 2.5 Flash Image 生成4张风格统一但视觉效果迥异的变体。",
+  "requestFramePermissions": []
+}
