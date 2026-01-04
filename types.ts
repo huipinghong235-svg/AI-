@@ -13,6 +13,8 @@ export interface GeneratedImage {
   id: string;
   url: string;
   status: 'loading' | 'success' | 'error';
+  mode?: AppMode;
+  timestamp?: number;
 }
 
 export type GeminiAspectRatio = "1:1" | "3:4" | "4:3" | "9:16" | "16:9";
@@ -23,6 +25,9 @@ export interface AppState {
   sourceAspectRatio: GeminiAspectRatio;
   referenceStyleImage: string | null;
   customPrompt: string;
+  generateCount: number;
+  intensity: number;
   isGenerating: boolean;
   results: GeneratedImage[];
+  history: GeneratedImage[];
 }
